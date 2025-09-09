@@ -1,0 +1,136 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('../../fonts/Satoshi-Light.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Light.woff') format('woff'),
+       url('../../fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url('../../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('../../fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('../../fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Regular.woff') format('woff'),
+       url('../../fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url('../../fonts/Satoshi-Italic.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Italic.woff') format('woff'),
+       url('../../fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Medium.woff') format('woff'),
+       url('../../fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../../fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('../../fonts/Satoshi-Black.woff2') format('woff2'),
+       url('../../fonts/Satoshi-Black.woff') format('woff'),
+       url('../../fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+// vars
+$mainFont:'Satoshi-Light', sans-serif;
+$secondaryFont:"Funnel Display", sans-serif;
+// colors
+$mainColor:#063F85;
+$secondaryColor: rgb(87, 87, 86);
+$keyColor: #BC1C1E;
+$white:#EAEAEA;
+// utilities
+// -------- bgs
+.bg-key{
+    background-color: $keyColor;
+}
+.bg-main{
+    background-color: $mainColor!important;
+}
+// -------- texts and fonts
+.text-main{
+    color: $mainColor!important;
+}
+.text-key{
+    color: $keyColor;
+}
+.text-white{
+    color:$white;
+}
+.text-secondary{
+  color: $secondaryColor;
+}
+.font-main{
+    font-family: $mainFont;
+}
+.font-key{
+    font-family: $secondaryFont;
+}
+// universal
+*{
+    font-family: $mainFont;
+    letter-spacing: 2%;
+}
+// bts
+.btn-primary{
+    background-color: $mainColor!important;
+    border-color: $mainColor;
+    border-radius: 20px;
+    padding: 6px 60px;
+    font-family: 'Satoshi-Medium';
+}
+.btn-outline-primary{
+  @extend .btn-primary;
+  background-color: transparent!important;
+  color: $mainColor;
+}
+.btn-key{
+    @extend .btn-primary;
+    background-color: $keyColor!important;
+    border-color: $keyColor;
+    color:$white;
+}
+// global headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: Satoshi-Bold;
+}

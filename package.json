@@ -1,0 +1,16 @@
+{
+  "name": "transcorp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch assets/styles/scss/main.scss  assets/styles/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.92.1"
+  }
+}

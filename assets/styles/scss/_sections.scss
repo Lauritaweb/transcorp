@@ -1,0 +1,134 @@
+.marquee{
+    background-color: $mainColor;
+    color: $white;
+}
+// header
+.header{
+    height: 90vh;
+    border-bottom-left-radius: 70px;
+    background: url(../../img/img-bg-header.png) no-repeat top center;
+    background-size: cover;
+    .menu{
+        .brand-logo{
+            width: 300px;
+        }
+        .social-ico{
+            width: 20px;
+        }
+    }
+}
+// slider
+/* Slider – separación entre ítems */
+.services-slider .slick-slide { padding: 0 .5rem; }
+
+/* Tarjeta con imagen de fondo y bordes redondeados grandes */
+.service-card{
+  position: relative;
+  height: 488px!important;               /* ajustá a tu diseño */
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+.service-content{
+  display:flex!important;
+  flex-direction: column!important;
+  justify-content: center!important;
+  align-items: flex-start!important;
+  padding-left: 20px;
+  height: 420px;
+}
+.service-iso{ 
+    width: 81px; 
+    opacity:.9; 
+}
+.service-title{ 
+    font-family: 'Satoshi-Bold';
+    font-size: 1.4rem; 
+    letter-spacing:.3px; 
+    margin: 0 0 .25rem; 
+    color:$white;
+}
+.service-desc{ 
+    font-size: 1.2rem; 
+    line-height: 1.4em;
+    margin: 0; 
+    opacity:.95; 
+    color:$white;
+}
+// bgs
+.one{
+    background-image: url(../../img/servicios/diarios.png);
+}
+.two{
+    background-image: url(../../img/servicios/ejecutivos.png);
+}
+.three{
+    background-image: url(../../img/servicios/aeropuerto.png);
+}
+.four{
+    background-image: url(../../img/servicios/eventos.png);
+}
+.five{
+    background-image: url(../../img/servicios/vip.png);
+}
+.six{
+    background-image: url(../../img/servicios/citytour.png);
+}
+.seven{
+    background-image: url(../../img/servicios/distancia.png);
+}
+/* Dots  */
+.services-slider .slick-dots{ margin-top: .5rem; }
+.services-slider .slick-dots li{ margin: 0 6px; }
+.services-slider .slick-dots li button:before{
+  font-size: 10px; color:$mainColor; opacity:.35; 
+}
+.services-slider .slick-dots li.slick-active button:before{
+  color: $mainColor; opacity:1;
+}
+/* arrows */
+.services-slider .slick-arrow{ z-index: 2; }
+// CTA 1
+.cta-1{
+    height: 495px;
+    background: url(../../img/img-bg-cta-1.png) no-repeat;
+    background-position: center top;
+    line-height: 1.8em;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+// Fleet
+.fleet{
+    background: url(../../img/logo-gris.png) no-repeat bottom right,
+                url(../../img/iso-mask.svg) no-repeat center;
+    background-color: rgba(87, 87, 86, .4);
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    height: 600px;
+    figure{
+        img{
+            width: 230px;
+        }
+        figcaption{
+        font-family: 'Satoshi-Medium';
+        }
+    }
+}
+// clients
+.clients{
+    height: 570px;
+    background: url(../../img/img-bg-clients.png) no-repeat;
+    background-size: cover;
+}
+// Benefits
+.benefits{
+    background-color: $mainColor;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    .col-md-7{
+        background-image: url(../../img/iso-mask-benefits.png);
+        background-size: cover;
+    }
+}

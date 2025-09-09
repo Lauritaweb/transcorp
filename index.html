@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transcorp — Landing</title>
+    <!-- Bootstrap 5 (CSS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
+
+  </head>
+  <body>
+    <!-- Marquee -->
+    <div class="marquee text-center py-2 ">
+      <p class="m-0 small text-center">
+        Autogestioná tu traslado corporativo.
+        <a href="#" class="link-primary text-decoration-none">Ingresá aquí</a>
+      </p>
+    </div>
+
+    <!-- Header -->
+    <header class="header container">
+    <!-- Navbar -->
+    <nav class="navbar bg-transparent menu pt-4">
+        <div class="container-fluid">
+            <div class="row align-items-center w-100 gx-0">
+                <!-- btn -->
+                <div class="col-4 d-flex">
+                    <button
+                    class="navbar-toggler p-0 border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Mostrar navegación">
+                    <img src="./assets/img/icons/btn_hamburger.svg" alt="Menú" height="22">
+                    </button>
+                </div>
+                <!-- logo -->
+                <div class="col-4 d-flex justify-content-center">
+                    <a href="#" class="navbar-brand m-0 p-0">
+                        <img src="./assets/img/logo-transcorp-color.svg" alt="Transcorp" class="brand-logo">
+                    </a>
+                </div>
+                <!-- Derecha: redes -->
+                <div class="col-4 d-flex align-items-center justify-content-end">
+                    <a href="#" class="ms-2">
+                        <img src="./assets/img/icons/instagram.svg" alt="Instagram" class="social-ico">
+                    </a>
+                    <a href="#" class="ms-2">
+                        <img src="./assets/img/icons/facebook.svg" alt="Facebook" class="social-ico">
+                    </a>
+                    <a href="#" class="ms-2">
+                        <img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" class="social-ico">
+                    </a>
+                    <a href="#" class="ms-2">
+                    <img src="./assets/img/icons/whatsapp.svg" alt="WhatsApp" class="social-ico">
+                    </a>
+                </div>
+            </div>
+            <!-- Menu colapsable-->
+            <div class="collapse navbar-collapse border-top" id="mainNavbar">
+                <ul class="navbar-nav mx-auto text-center py-2">
+                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Flota</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Autogestión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+      <div class="container py-5">
+        <div class="row mt-5">
+            <div class="col-md-6 text-white">
+                <h1 class="fs-1 fw-semibold mb-3">
+                    Trasladamos a tus empleados, potenciamos a tu empresa
+                </h1>
+                <p class="lead mb-4">
+                    Cuando tus equipos viajan más tranquilos y sin preocuparse por el tránsito,
+                    llegan descansados y con más energía para enfocarse en lo importante.
+                </p>
+                <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                >
+                Cotizar
+                </button>
+            </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="py-4 servicios">
+        <div class="container">
+            <h2 class="fs-2 mb-3 text-main">Servicios</h2>
+            <div class="services-slider">
+                    <!-- Slide 1 -->
+                    <article class="service-card one" style="height: 420px;">
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">TRASLADOS CORPORATIVOS DIARIOS</h3>
+                            <p class="service-desc">Movilidad confiable para empleados, con recorridos programados y transporte seguro.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 2 -->
+                    <article class="service-card two" style="height: 420px;">
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">TRASLADOS EJECUTIVOS</h3>
+                            <p class="service-desc">Viajes pensados para directivos, con vehículos de mayor confort y choferes profesionales.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 3 -->
+                    <article class="service-card three" style="height: 420px;">
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">TRASLADOS AL AEROPUERTO</h3>
+                            <p class="service-desc">Conexión puntual entre empresa y aeropuertos, ideal para vuelos y viajes de negocios.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 4 -->
+                    <article class="service-card four" style="height: 420px;">
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">TRASLADOS PARA EVENTOS</h3>
+                            <p class="service-desc">Soluciones prácticas para congresos, capacitaciones y encuentros corporativos.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 5 -->
+                    <article class="service-card five" style="height: 420px;">                        
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">TRASLADOS VIP Y ESPECIALES</h3>
+                            <p class="service-desc">Servicios premium para clientes estratégicos y traslados de alta categoría.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 6 -->
+                    <article class="service-card six" style="height: 420px;">
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">CITY TOURS CORPORATIVOS</h3>
+                            <p class="service-desc">Recorridos diseñados para delegaciones y visitas de clientes internacionales.</p>
+                        </div>
+                    </article>
+                    <!-- Slide 7 -->
+                    <article class="service-card seven" style="height: 420px;">                        
+                        <div class="service-content">
+                            <img class="service-iso" src="./assets/img/logo-iso-blanco.png" alt="">
+                            <h3 class="service-title">VIAJES DE LARGA DISTANCIA</h3>
+                            <p class="service-desc">Traslados interurbanos pensados para empleados y directivos, con comodidad y seguridad en trayectos de varias horas.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- CTA 1 -->
+        <section class="cta-1 container d-flex flex-column align-items-center justify-content-center">
+            <h2 class="fs-1 text-white text-center">
+                Seguridad en cada traslado
+            </h2>
+            <p class="text-white fs-4 text-center fw-regular">
+                Nuestros choferes cuentan con años de experiencia y con toda la <br> 
+                documentación al día que respalda su profesionalismo.
+            </p>
+            <button
+                type="button"
+                class="btn btn-key"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                >
+                Cotizar
+            </button>
+        </section>
+        <!-- Fleet -->
+        <section class="p-4 fleet container text-main my-5">
+            <div class=" d-flex flex-column align-items-center justify-content-center">
+              <div class="row">
+                  <h2 class="fs-2 my-5 text-center">
+                    Flota
+                  </h2>
+                  <figure class="col-md-4 text-center">
+                    <img src="./assets/img/servicio-estandar.png" alt="">
+                    <figcaption class="fs-3 text-uppercase">Estándar</figcaption>
+                    <span class="fw-bold fs-5">
+                      Plazas: 3
+                    </span>
+                    <p class="fs-5 lh-sm px-4">
+                      Traslados cómodos y seguros en autos modernos, ideales para el transporte diario de empleados y equipos de trabajo.
+                    </p>
+                  </figure>
+                  <figure class="col-md-4 text-center">
+                    <img src="./assets/img/servicio-premium.png" alt="">
+                    <figcaption class="fs-3 text-uppercase">Premium</figcaption>
+                    <span class="fw-bold fs-5">
+                      Plazas: 3
+                    </span>
+                    <p class="fs-5 lh-sm px-4">
+                      Una experiencia de mayor confort en vehículos ejecutivos, pensados para directivos y traslados de nivel corporativo.
+                    </p>
+                  </figure>
+                  <figure class="col-md-4 text-center">
+                    <img src="./assets/img/servicio-utilitario.png" alt="">
+                    <figcaption class="fs-3 text-uppercase">Utilitario</figcaption>
+                    <span class="fw-bold fs-5">
+                      Plazas: 3
+                    </span>
+                    <p class="fs-5 lh-sm px-4">
+                      Soluciones prácticas para grupos grandes o traslados con equipaje, garantizando espacio y eficiencia en cada viaje.
+                    </p>
+                  </figure>
+              </div>
+            <button
+                type="button"
+                class="btn btn-key"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                >
+                Cotizar
+            </button>
+            </div>
+        </section>
+        <!-- Clients -->
+        <section class="clients container d-flex flex-column align-items-center justify-content-center my-5">
+          <div class="container-fluid">
+            <h2 class="fs-3 my-4 text-uppercase text-white text-center">
+                    Empresas líderes que ya confían en nosotros
+            </h2>
+            <div class="row">
+              <div class="clients-brand col-md-8 mx-auto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./assets/img/clients-1.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./assets/img/clients-2.png" alt="">
+                  </div>
+                  <div class="col-md-6 mt-0 mt-md-3">
+                    <img src="./assets/img/clients-3.png" alt="">
+                  </div>
+                  <div class="col-md-6 mt-0 mt-md-3">
+                    <img src="./assets/img/clients-4.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- WebApp -->
+        <section class="app container my-5">
+          <div class="row">
+            <article class="col-md-8">
+              <h2 class="fs-2 text-main">
+                Autogestión
+              </h2>
+              <p class="fs-5 lh-base text-dark pe-0 pe-md-4">
+                Tus empleados podrán solicitar sus traslados desde nuestra nueva plataforma digital de gestión. Con ella, se ahorra tiempo en cada pedido y se gana en confianza para el solicitante, precisión para el chofer, transparencia en la facturación y eficiencia para los coordinadores.
+              </p>
+              <p class="fs-5 lh-base text-dark pe-0 pe-md-4">
+                <strong>Beneficios de la autogestión:</strong>
+                  <ul class="fs-5">
+                    <li>
+                      Reservar viajes de manera rápida y directa.
+                    </li>
+                    <li>
+                      Consultar en todo momento el estado de cada traslado.
+                    </li>
+                    <li>
+                      Recibir notificaciones sobre el servicio en curso.
+                    </li>
+                    <li>
+                      Una experiencia simple, ágil y segura para tu empresa.
+                    </li>
+                    <li>
+                      Cotizá ahora y reservá tus viajes con Transcorp.
+                    </li>
+                  </ul>
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                >
+                Cotizar
+              </button>
+            </article>
+            <div class="col-md-4">
+              <img src="./assets/img/mockup-autogestion.png" alt="" class="w-100">
+            </div>
+          </div>
+        </section>
+        <!-- Benefits -->
+        <section class="benefits mb-5 container">
+          <div class="row">
+            <article class="col-md-7 text-white">
+              <h2 class="fs-2 py-4 ps-4">Beneficios</h2>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/emoji-smile.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Bienestar laboral</figcaption>
+                  <p class="text-white fs-5">
+                    Tus empleados viajan más cómodos, con menos estrés y mejor predisposición al llegar a su lugar de trabajo.
+                  </p>
+                </div>
+              </figure>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/graph-up-arrow.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Más productividad</figcaption>
+                  <p class="text-white fs-5">
+                    Al no lidiar con el tránsito, llegan con energía renovada para enfocarse en las tareas que generan valor.
+                  </p>
+                </div>
+              </figure>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/clock-history.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Puntualidad garantizada</figcaption>
+                  <p class="text-white fs-5">
+                    Traslados programados y confiables, que aseguran la llegada en tiempo y forma de tus equipos.
+                  </p>
+                </div>
+              </figure>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/shield-check.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Confianza corporativa</figcaption>
+                  <p class="text-white fs-5">                    
+                    Soluciones de movilidad diseñadas para empresas que buscan cuidar a su gente y optimizar resultados.
+                  </p>
+                </div>
+              </figure>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/credit-card.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Formas de pago adaptadas a tu empresa</figcaption>
+                  <p class="text-white fs-5">
+                    Aceptamos efectivo, transferencias y cuenta corriente corporativa para facilitar la gestión de cada organización.
+                  </p>
+                </div>
+              </figure>
+              <figure class="ps-4 d-flex align-items-center justify-content-center">
+                <img src="./assets/img/icons/bar-chart-line.svg" alt="" class="me-3">
+                <div>
+                  <figcaption class="fw-bold fs-5">Reportes de gasto</figcaption>
+                  <p class="text-white fs-5">
+                    Obtené reportes claros que permiten controlar y optimizar los consumos del servicio, aportando más eficiencia a tu empresa.
+                  </p>
+                </div>
+              </figure>
+            </article>
+            <div class="col-md-5 p-0">
+              <img src="./assets/img/img-worker.png" alt="" class="w-100 me-0">
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap 5 (JS bundle) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery (requerido por Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('.services-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+            arrows: false,          
+            speed: 450,
+            autoplay: true,         // activa autoplay
+            autoplaySpeed: 5000,    // delay de 8 segundos
+            pauseOnHover: false,    // sigue corriendo aunque el mouse esté encima
+            responsive: [
+                { 
+                breakpoint: 992, 
+                settings: { 
+                    slidesToShow: 1, 
+                    slidesToScroll: 1 
+                } 
+                }
+            ]
+            });
+        });
+    </script>
+
+    <!-- Modal Cotizar -->
+    <div
+      class="modal fade"
+      id="cotizarModal"
+      tabindex="-1"
+      aria-labelledby="cotizarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="cotizarModalLabel">Solicitar cotización</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio</label>
+                <select id="servicio" class="form-select" required>
+                  <option value="" selected disabled>Seleccionar</option>
+                  <option>Traslados corporativos diarios</option>
+                  <option>Traslados ejecutivos</option>
+                  <option>Traslados al aeropuerto</option>
+                  <option>Traslados para eventos</option>
+                  <option>Traslados VIP y especiales</option>
+                  <option>City tours corporativos</option>
+                </select>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="origen" class="form-label">Origen</label>
+                  <input type="text" id="origen" class="form-control" placeholder="Dirección o punto de partida" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="destino" class="form-label">Destino</label>
+                  <input type="text" id="destino" class="form-control" placeholder="Dirección o punto de llegada" required />
+                </div>
+              </div>
+
+              <div class="row g-3 mt-0">
+                <div class="col-md-6">
+                  <label for="fecha" class="form-label">Fecha</label>
+                  <input type="date" id="fecha" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="hora" class="form-label">Hora</label>
+                  <input type="time" id="hora" class="form-control" required />
+                </div>
+              </div>
+
+              <div class="row g-3 mt-0">
+                <div class="col-md-6">
+                  <label for="pasajeros" class="form-label">Cantidad de pasajeros</label>
+                  <input type="number" id="pasajeros" class="form-control" min="1" step="1" placeholder="Ej: 3" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="comentarios" class="form-label">Comentario</label>
+                  <input type="text" id="comentarios" class="form-control" placeholder="Observaciones (opcional)" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
