@@ -270,4 +270,74 @@ h6 {
   background-size: cover;
 }
 
+.eco h2 {
+  color: #005833;
+}
+
+.faqs {
+  background: url(../../img/bg-img-faqs.png) no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+}
+.faqs .accordion-faq .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+}
+.faqs .accordion-faq .accordion-item {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.faqs .accordion-faq .accordion-button {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 56px 14px 20px; /* espacio para el + a la derecha */
+  box-shadow: none;
+  font-weight: 500;
+}
+.faqs .accordion-faq .accordion-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.faqs .accordion-faq .accordion-button::after {
+  content: "+";
+  background-image: none !important;
+  font-weight: 700;
+  color: #fff;
+  width: auto;
+  height: auto;
+  transform: none;
+  margin-left: auto;
+  margin-right: 12px;
+}
+.faqs .accordion-faq .accordion-body {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 20px 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.faqs .accordion-faq .accordion-button:not(.collapsed)::after {
+  content: "–";
+}
+.faqs .accordion-faq .accordion-item {
+  padding-right: 12px;
+}
+.faqs .accordion-faq .accordion-header {
+  border-radius: 999px;
+}
+
+footer .footer-icon {
+  width: 34px;
+}
+footer a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */
