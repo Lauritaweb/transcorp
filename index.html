@@ -34,15 +34,15 @@
                 <!-- btn -->
                 <div class="col-4 d-flex">
                     <button
-                    class="navbar-toggler p-0 border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#mainNavbar"
-                    aria-controls="mainNavbar"
-                    aria-expanded="false"
-                    aria-label="Mostrar navegación">
-                    <img src="./assets/img/icons/btn_hamburger.svg" alt="Menú" height="22">
+                      class="navbar-toggler p-0 border-0"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasMenu"
+                      aria-controls="offcanvasMenu"
+                      aria-label="Mostrar navegación">
+                      <img src="./assets/img/icons/btn_hamburger.svg" alt="Menú" height="22">
                     </button>
+
                 </div>
                 <!-- logo -->
                 <div class="col-4 d-flex justify-content-center">
@@ -50,8 +50,8 @@
                         <img src="./assets/img/logo-transcorp-color.svg" alt="Transcorp" class="brand-logo">
                     </a>
                 </div>
-                <!-- Derecha: redes -->
-                <div class="col-4 d-flex align-items-center justify-content-end">
+                <!-- social -->
+                <div class="col-4 d-flex align-items-center justify-content-end social">
                     <a href="#" class="ms-2">
                         <img src="./assets/img/icons/instagram.svg" alt="Instagram" class="social-ico">
                     </a>
@@ -66,23 +66,38 @@
                     </a>
                 </div>
             </div>
-            <!-- Menu colapsable-->
-            <div class="collapse navbar-collapse border-top" id="mainNavbar">
-                <ul class="navbar-nav mx-auto text-center py-2">
-                    <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Flota</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Autogestión</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Beneficios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sustentabilidad</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
-                </ul>
-            </div>
+            
+            
+
+
         </div>
     </nav>
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start"
+     tabindex="-1"
+     id="offcanvasMenu"
+     aria-labelledby="offcanvasMenuLabel"
+     data-bs-scroll="true"
+     data-bs-backdrop="true">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fleet">Flota</a></li>
+          <li class="nav-item"><a class="nav-link" href="#app">Autogestión</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#eco">Sustentabilidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faqs">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Hero -->
       <div class="container py-5">
-        <div class="row mt-5">
+        <div class="row mt-0 mt-md-5">
             <div class="col-md-6 text-white">
                 <h1 class="fs-1 fw-semibold mb-3">
                     Trasladamos a tus empleados, potenciamos a tu empresa
@@ -105,7 +120,7 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="py-4 servicios">
+        <section class="py-4 services" id="services">
         <div class="container">
             <h2 class="fs-2 mb-3 text-main">Servicios</h2>
             <div class="services-slider">
@@ -188,7 +203,7 @@
             </button>
         </section>
         <!-- Fleet -->
-        <section class="p-4 fleet container text-main my-5">
+        <section class="p-4 fleet container text-main my-5" id="fleet">
             <div class=" d-flex flex-column align-items-center justify-content-center">
               <div class="row">
                   <h2 class="fs-2 my-5 text-center">
@@ -244,16 +259,16 @@
             <div class="row">
               <div class="clients-brand col-md-8 mx-auto">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 mt-3 mt-md-0">
                     <img src="./assets/img/clients-1.png" alt="">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mt-3 mt-md-0">
                     <img src="./assets/img/clients-2.png" alt="">
                   </div>
-                  <div class="col-md-6 mt-0 mt-md-3">
+                  <div class="col-md-6 mt-3 mt-md-3">
                     <img src="./assets/img/clients-3.png" alt="">
                   </div>
-                  <div class="col-md-6 mt-0 mt-md-3">
+                  <div class="col-md-6 mt-3 mt-md-3">
                     <img src="./assets/img/clients-4.png" alt="">
                   </div>
                 </div>
@@ -262,9 +277,9 @@
           </div>
         </section>
         <!-- WebApp -->
-        <section class="app container my-5">
+        <section class="app container my-5" id="app">
           <div class="row">
-            <article class="col-md-8">
+            <article class="col-md-8 px-4 px-md-0">
               <h2 class="fs-2 text-main">
                 Autogestión
               </h2>
@@ -293,20 +308,28 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-primary"
+                class="btn btn-outline-primary d-none d-md-block"
                 data-bs-toggle="modal"
                 data-bs-target="#cotizarModal"
                 >
                 Cotizar
               </button>
             </article>
-            <div class="col-md-4">
-              <img src="./assets/img/mockup-autogestion.png" alt="" class="w-100">
+            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+              <img src="./assets/img/mockup-autogestion.png" alt="">
+              <button
+                type="button"
+                class="btn btn-outline-primary d-block d-md-none mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                >
+                Cotizar
+              </button>
             </div>
           </div>
         </section>
         <!-- Benefits -->
-        <section class="benefits mb-5 container">
+        <section class="benefits mb-0 mb-md-5 container" id="benefits">
           <div class="row">
             <article class="col-md-7 text-white">
               <h2 class="fs-2 py-4 ps-4">Beneficios</h2>
@@ -371,7 +394,7 @@
           </div>
         </section>
         <!-- Eco -->
-        <section class="eco container p-4">
+        <section class="eco container p-4" id="eco">
           <div class="row">
             <div class="col-md-5">
               <img src="./assets/img/sustentabilidad-transcorp.png" alt="">
@@ -404,7 +427,7 @@
           </div>
         </section>
         <!-- Faqs -->
-        <section class="faqs container p-4 pb-5 my-5">
+        <section class="faqs container p-4 pb-5 my-0 my-md-5" id="faqs">
           <h2 class="fs-2 py-4 ps-4 text-white">Preguntas frecuentes</h2>
           <div class="accordion accordion-faq" id="faqAccordion">
               <!-- Item 1 -->
@@ -526,7 +549,7 @@
     <footer class="container">
       <div class="row align-items-center">
         <div class="col-md-4 p-0">
-          <img src="./assets/img/transcorp-logo-color-vertical.png" alt="">
+          <img src="./assets/img/transcorp-logo-color-vertical.png" alt="" class="footer-brand">
         </div>
         <div class="col-md-4 text-center">
             <a href="#">
@@ -542,7 +565,7 @@
               <img src="./assets/img/icons/whatsapp-gris.svg" alt="" class="footer-icon">
             </a>
         </div>
-        <div class="col-md-4 text-end">
+        <div class="col-md-4 text-center text-md-end">
           <p class="fs-6">
             Email: info@transcorp.com <br>
             Teléfono: +54 9 11 33333333
@@ -588,6 +611,41 @@
             });
         });
     </script>
+
+    <!-- script off canvas -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      
+        const offcanvasEl = document.getElementById('offcanvasMenu');
+        const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+
+        offcanvasEl.addEventListener('click', function (e) {
+          const link = e.target.closest('a.nav-link');
+          if (!link) return;
+
+          const hash = link.getAttribute('href');
+          
+          if (!hash || hash === '#') {
+            e.preventDefault();
+            return;
+          }
+
+          if (hash.startsWith('#')) {
+            e.preventDefault();
+            
+            offcanvas.hide();
+          
+            const target = document.querySelector(hash);
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 300);
+            }
+          }
+        });
+      });
+    </script>
+
 
     <!-- Modal Cotizar -->
     <div

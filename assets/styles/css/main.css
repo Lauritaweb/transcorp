@@ -54,11 +54,11 @@
 }
 
 .bg-main {
-  background-color: #063F85 !important;
+  background-color: rgb(6, 63, 133) !important;
 }
 
 .text-main {
-  color: #063F85 !important;
+  color: rgb(6, 63, 133) !important;
 }
 
 .text-key {
@@ -86,9 +86,13 @@
   letter-spacing: 2%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn-primary, .btn-key, .btn-outline-primary {
-  background-color: #063F85 !important;
-  border-color: #063F85;
+  background-color: rgb(6, 63, 133) !important;
+  border-color: rgb(6, 63, 133);
   border-radius: 20px;
   padding: 6px 60px;
   font-family: "Satoshi-Medium";
@@ -96,7 +100,7 @@
 
 .btn-outline-primary {
   background-color: transparent !important;
-  color: #063F85;
+  color: rgb(6, 63, 133);
 }
 
 .btn-key {
@@ -115,7 +119,7 @@ h6 {
 }
 
 .marquee {
-  background-color: #063F85;
+  background-color: rgb(6, 63, 133);
   color: #EAEAEA;
 }
 
@@ -131,16 +135,18 @@ h6 {
 .header .menu .social-ico {
   width: 20px;
 }
+.header .menu button img {
+  height: 22px;
+}
 
-/* Slider – separación entre ítems */
 .services-slider .slick-slide {
   padding: 0 0.5rem;
 }
 
-/* Tarjeta con imagen de fondo y bordes redondeados grandes */
+/* cards */
 .service-card {
   position: relative;
-  height: 488px !important; /* ajustá a tu diseño */
+  height: 488px !important;
   border-radius: 18px;
   overflow: hidden;
   background-size: cover;
@@ -217,12 +223,12 @@ h6 {
 
 .services-slider .slick-dots li button:before {
   font-size: 10px;
-  color: #063F85;
+  color: rgb(6, 63, 133);
   opacity: 0.35;
 }
 
 .services-slider .slick-dots li.slick-active button:before {
-  color: #063F85;
+  color: rgb(6, 63, 133);
   opacity: 1;
 }
 
@@ -261,13 +267,17 @@ h6 {
 }
 
 .benefits {
-  background-color: #063F85;
+  background-color: rgb(6, 63, 133);
   border-top-left-radius: 70px;
   border-bottom-left-radius: 70px;
 }
 .benefits .col-md-7 {
   background-image: url(../../img/iso-mask-benefits.png);
   background-size: cover;
+}
+
+.app img {
+  height: 350px;
 }
 
 .eco h2 {
@@ -338,6 +348,112 @@ footer .footer-icon {
 }
 footer a {
   text-decoration: none;
+}
+
+@media (width <= 992px) {
+  .header .menu .social {
+    display: none !important;
+  }
+  .services .service-card {
+    height: 420px !important;
+  }
+  .clients,
+  .fleet {
+    height: auto;
+  }
+  .clients {
+    background: url(../../img/img-bg-clients-mobile.png) top center no-repeat;
+    background-size: cover;
+  }
+  .clients .row {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .benefits img.w-100.me-0 {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .col-md-4 {
+    margin: 15px 0;
+  }
+  footer .footer-brand {
+    width: 150px;
+  }
+}
+@media (width <= 768px) {
+  .container {
+    max-width: 90% !important;
+  }
+}
+@media (width <= 535px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .header {
+    height: 70vh;
+    background: url(../../img/img-bg-header-mobile.png) no-repeat;
+    background-size: cover;
+  }
+  .header .menu .brand-logo {
+    width: 250px;
+    margin-top: 30px;
+  }
+  .header button img {
+    height: 15px;
+  }
+  .cta-1 {
+    height: 400px;
+    border-top-left-radius: 0;
+  }
+  .fleet {
+    background: url(../../img/iso-mask.svg) repeat top center;
+    background-color: rgba(87, 87, 86, 0.4);
+    border-top-left-radius: 0;
+    height: auto;
+  }
+  .clients {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 70px;
+    background-position: right center;
+  }
+  .clients img {
+    width: 100%;
+  }
+  .benefits {
+    border-top-left-radius: 0;
+  }
+  .eco img {
+    width: 320px;
+    margin: auto;
+    display: block;
+  }
+  .faqs {
+    border-top-left-radius: 0;
+    background: url(../../img/bg-img-faqs-mobile.png) no-repeat;
+    background-size: cover;
+  }
+  .btn-primary,
+  .btn-outline-primary,
+  .btn-key {
+    padding: 8px 120px;
+  }
+}
+@media (width <= 376px) {
+  .header,
+  .cta-1,
+  .clients,
+  .fleet {
+    border-bottom-left-radius: 0;
+  }
+  .fleet.my-5,
+  .clients.my-5 {
+    margin: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

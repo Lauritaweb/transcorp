@@ -15,16 +15,17 @@
         .social-ico{
             width: 20px;
         }
+        button img{
+            height: 22px;
+        }
     }
 }
 // slider
-/* Slider – separación entre ítems */
 .services-slider .slick-slide { padding: 0 .5rem; }
-
-/* Tarjeta con imagen de fondo y bordes redondeados grandes */
+/* cards */
 .service-card{
   position: relative;
-  height: 488px!important;               /* ajustá a tu diseño */
+  height: 488px!important;               
   border-radius: 18px;
   overflow: hidden;
   background-size: cover;
@@ -130,6 +131,12 @@
     .col-md-7{
         background-image: url(../../img/iso-mask-benefits.png);
         background-size: cover;
+    }
+}
+// App
+.app{
+    img{
+        height: 350px;
     }
 }
 // Eco

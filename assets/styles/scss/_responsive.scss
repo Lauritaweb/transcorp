@@ -1,0 +1,121 @@
+@media (width <= 992px){
+    .header{
+        .menu .social{
+            display: none!important;
+        }
+        
+    }
+    .services{
+        .service-card{
+            height: 420px!important;
+        }
+    }
+    .clients,
+    .fleet{
+        height: auto;
+    }
+    .clients{
+        background: url(../../img/img-bg-clients-mobile.png) top center no-repeat;
+        background-size: cover;
+        
+        .row{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+    .benefits{
+        img.w-100.me-0{
+            display: none;
+        }
+    }
+    footer{
+        text-align: center;
+        .col-md-4{
+            margin: 15px 0;
+        }
+        .footer-brand{
+            width: 150px
+        }
+    }
+}
+
+@media (width <= 768px){
+    .container{
+        max-width: 90%!important;
+    }
+}
+@media (width <= 535px){
+    .container{
+        max-width: 100%!important;
+    }
+    .header{
+        height: 70vh;
+        background: url(../../img/img-bg-header-mobile.png) no-repeat;
+        background-size: cover;
+        .menu .brand-logo{
+           width: 250px;
+           margin-top: 30px;
+        }
+        button{
+            img{
+                height: 15px;
+            }
+        }
+    }
+    .cta-1{
+        height: 400px;
+        border-top-left-radius: 0;
+    }
+    .fleet{
+        background: url(../../img/iso-mask.svg) repeat top center;
+        background-color: rgba(87, 87, 86, .4);
+        border-top-left-radius: 0;
+        height: auto;
+    }
+    .clients{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 70px;
+        background-position: right center;
+        img{
+            width: 100%;
+        }
+    }
+    .benefits{
+        border-top-left-radius: 0;
+    }
+    .eco{
+        img{
+            width: 320px;
+            margin: auto;
+            display: block;
+        }
+    }
+    .faqs{
+        border-top-left-radius: 0;
+        background: url(../../img/bg-img-faqs-mobile.png) no-repeat;
+        background-size: cover;
+    }
+    // btns
+    .btn-primary,
+    .btn-outline-primary,
+    .btn-key{
+        padding: 8px 120px;
+    }
+
+}
+
+@media (width <= 376px){
+    .header,
+    .cta-1,
+    .clients,
+    .fleet{
+        border-bottom-left-radius: 0;
+    }
+    .fleet.my-5,
+    .clients.my-5{
+        margin: 0!important;
+    }
+}

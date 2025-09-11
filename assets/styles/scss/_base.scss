@@ -70,7 +70,7 @@
 $mainFont:'Satoshi-Light', sans-serif;
 $secondaryFont:"Funnel Display", sans-serif;
 // colors
-$mainColor:#063F85;
+$mainColor:rgb(6, 63, 133);
 $secondaryColor: rgb(87, 87, 86);
 $keyColor: #BC1C1E;
 $white:#EAEAEA;
@@ -105,6 +105,9 @@ $white:#EAEAEA;
 *{
     font-family: $mainFont;
     letter-spacing: 2%;
+}
+html { 
+  scroll-behavior: smooth; 
 }
 // bts
 .btn-primary{
