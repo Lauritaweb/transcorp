@@ -160,7 +160,7 @@
         .accordion-item{
             background: transparent;
             border: 1px solid rgba(255,255,255,.45);
-            border-radius: 999px;
+            border-radius: 10px;
             margin-bottom: 12px;
             overflow: hidden;
         }
@@ -169,7 +169,7 @@
             color: #fff;
             border: 0;
             border-radius: 999px;
-            padding: 14px 56px 14px 20px;      /* espacio para el + a la derecha */
+            padding: 14px 7px 14px 20px;      
             box-shadow: none;
             font-weight: 500;
             &:hover{
@@ -214,7 +214,15 @@ footer{
         text-decoration: none;
     }
 }
-
+// wa
+.wa{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    img{
+        width: 70px;
+    }
+}
 
 
 

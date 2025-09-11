@@ -28,7 +28,7 @@
     <!-- Header -->
     <header class="header container">
     <!-- Navbar -->
-    <nav class="navbar bg-transparent menu pt-4">
+    <nav class="navbar bg-transparent menu pt-4 desktop d-none d-md-block">
         <div class="container-fluid">
             <div class="row align-items-center w-100 gx-0">
                 <!-- btn -->
@@ -52,16 +52,16 @@
                 </div>
                 <!-- social -->
                 <div class="col-4 d-flex align-items-center justify-content-end social">
-                    <a href="#" class="ms-2">
+                    <a href="https://www.instagram.com/transcorp_digital/" class="ms-2">
                         <img src="./assets/img/icons/instagram.svg" alt="Instagram" class="social-ico">
                     </a>
-                    <a href="#" class="ms-2">
+                    <a href="https://www.facebook.com/transcorp.digital" class="ms-2">
                         <img src="./assets/img/icons/facebook.svg" alt="Facebook" class="social-ico">
                     </a>
                     <a href="#" class="ms-2">
                         <img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" class="social-ico">
                     </a>
-                    <a href="#" class="ms-2">
+                    <a href="https://wa.me/5491156448132" class="ms-2">
                     <img src="./assets/img/icons/whatsapp.svg" alt="WhatsApp" class="social-ico">
                     </a>
                 </div>
@@ -70,6 +70,30 @@
             
 
 
+        </div>
+    </nav>
+    <nav class="navbar bg-transparent menu mobile d-block d-md-none">
+        <div class="container-fluid">
+            <div class="d-flex flex-column justify-content-between w-100">
+              <!-- btn -->
+                <div class="align-self-end">
+                    <button
+                      class="navbar-toggler pt-3 p-0 border-0"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasMenu"
+                      aria-controls="offcanvasMenu"
+                      aria-label="Mostrar navegación">
+                      <img src="./assets/img/icons/btn_hamburger.svg" alt="Menú" height="22">
+                    </button>
+                </div>
+              <!-- logo -->
+                <div>
+                    <a href="#" class="navbar-brand m-0 p-0">
+                        <img src="./assets/img/logo-transcorp-color.svg" alt="Transcorp" class="brand-logo">
+                    </a>
+                </div>                
+            </div>
         </div>
     </nav>
     <!-- Offcanvas Menu -->
@@ -552,23 +576,23 @@
           <img src="./assets/img/transcorp-logo-color-vertical.png" alt="" class="footer-brand">
         </div>
         <div class="col-md-4 text-center">
-            <a href="#">
+            <a href="https://www.instagram.com/transcorp_digital/">
               <img src="./assets/img/icons/instagram-gris.svg" alt="" class="footer-icon">
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/transcorp.digital">
               <img src="./assets/img/icons/facebook-gris.svg" alt="" class="footer-icon">
             </a>
             <a href="#">
               <img src="./assets/img/icons/linkedin-gris.svg" alt="" class="footer-icon">
             </a>
-            <a href="#">
+            <a href="https://wa.me/5491156448132">
               <img src="./assets/img/icons/whatsapp-gris.svg" alt="" class="footer-icon">
             </a>
         </div>
         <div class="col-md-4 text-center text-md-end">
           <p class="fs-6">
             Email: info@transcorp.com <br>
-            Teléfono: +54 9 11 33333333
+            Teléfono: +54 9 11 5644-8132
             <br><br>
             © 2025 Transcorp
           </p>
@@ -576,6 +600,12 @@
       </div>
     </footer>
 
+    <!-- Wa -->
+     <div class="wa">
+      <a href="https://wa.me/5491156448132">
+        <img src="./assets/img/icons/whatsapp-green.svg" alt="">
+      </a>
+     </div>
     <!-- Bootstrap 5 (JS bundle) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
