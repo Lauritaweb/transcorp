@@ -693,8 +693,16 @@
           </div>
           <div class="modal-body">
             <form>
+               <div class="mb-3">
+                  <label for="destino" class="form-label">Empresa</label> <span class="text-danger">*</span>
+                  <input type="text" id="destino" class="form-control" placeholder="" required />
+              </div>
               <div class="mb-3">
-                <label for="servicio" class="form-label">Servicio</label>
+                  <label for="destino" class="form-label">Nombre y apellido</label><span class="text-danger">*</span>
+                  <input type="text" id="destino" class="form-control" placeholder="" required />
+              </div>
+              <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio</label><span class="text-danger">*</span>
                 <select id="servicio" class="form-select" required>
                   <option value="" selected disabled>Seleccionar</option>
                   <option>Traslados corporativos diarios</option>
@@ -708,41 +716,52 @@
 
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label for="origen" class="form-label">Origen</label>
-                  <input type="text" id="origen" class="form-control" placeholder="Dirección o punto de partida" required />
+                  <label for="origen" class="form-label">Email corporativo</label><span class="text-danger">*</span>
+                  <input type="text" id="origen" class="form-control" placeholder="" required />
                 </div>
                 <div class="col-md-6">
-                  <label for="destino" class="form-label">Destino</label>
-                  <input type="text" id="destino" class="form-control" placeholder="Dirección o punto de llegada" required />
+                  <label for="destino" class="form-label">Télefono / Celular</label><span class="text-danger">*</span>
+                  <input type="text" id="destino" class="form-control" placeholder="" required />
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="origen" class="form-label">Origen</label><span class="text-danger">*</span>
+                  <input type="text" id="origen" class="form-control" placeholder="" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="destino" class="form-label">Destino</label><span class="text-danger">*</span>
+                  <input type="text" id="destino" class="form-control" placeholder="" required />
                 </div>
               </div>
 
               <div class="row g-3 mt-0">
                 <div class="col-md-6">
-                  <label for="fecha" class="form-label">Fecha</label>
+                  <label for="fecha" class="form-label">Fecha</label><span class="text-danger">*</span>
                   <input type="date" id="fecha" class="form-control" required />
                 </div>
                 <div class="col-md-6">
-                  <label for="hora" class="form-label">Hora</label>
+                  <label for="hora" class="form-label">Hora</label><span class="text-danger">*</span>
                   <input type="time" id="hora" class="form-control" required />
                 </div>
               </div>
 
               <div class="row g-3 mt-0">
                 <div class="col-md-6">
-                  <label for="pasajeros" class="form-label">Cantidad de pasajeros</label>
-                  <input type="number" id="pasajeros" class="form-control" min="1" step="1" placeholder="Ej: 3" required />
+                  <label for="pasajeros" class="form-label">Cantidad de pasajeros</label><span class="text-danger">*</span>
+                  <input type="number" id="pasajeros" class="form-control" min="1" step="1" placeholder="" required />
                 </div>
                 <div class="col-md-6">
                   <label for="comentarios" class="form-label">Comentario</label>
-                  <input type="text" id="comentarios" class="form-control" placeholder="Observaciones (opcional)" />
+                  <input type="text" id="comentarios" class="form-control" placeholder="" />
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn-outline-key" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn-primary text-white">Enviar</button>
           </div>
         </div>
       </div>

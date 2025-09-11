@@ -224,6 +224,19 @@ footer{
     }
 }
 
+.modal{
+    --bs-modal-width: 85vw;
+    .modal-title{
+        font-family: 'Satoshi-Black';
+        color: $mainColor;
+    }
+    .form-label{
+         font-family: 'Satoshi-Bold';
+    }
+    input{
+        border: solid 1px $mainColor;
+    }
+}
 
 
 

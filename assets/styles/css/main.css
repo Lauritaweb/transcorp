@@ -96,6 +96,12 @@ html {
   border-radius: 20px;
   padding: 6px 60px;
   font-family: "Satoshi-Medium";
+  transition: all 0.5s ease;
+}
+.btn-primary:hover, .btn-key:hover, .btn-outline-primary:hover {
+  background-color: #BC1C1E !important;
+  color: #EAEAEA;
+  border-color: #BC1C1E;
 }
 
 .btn-outline-primary {
@@ -107,6 +113,22 @@ html {
   background-color: #BC1C1E !important;
   border-color: #BC1C1E;
   color: #EAEAEA;
+}
+.btn-key:hover {
+  background-color: rgb(6, 63, 133) !important;
+  border-color: rgb(6, 63, 133);
+}
+
+.btn-outline-key {
+  background-color: transparent !important;
+  color: #BC1C1E;
+  border: solid #BC1C1E 1px;
+  border-radius: 20px;
+  padding: 6px 60px;
+}
+.btn-outline-key:hover {
+  background-color: #BC1C1E !important;
+  color: #EAEAEA !important;
 }
 
 h1,
@@ -359,6 +381,20 @@ footer a {
   width: 70px;
 }
 
+.modal {
+  --bs-modal-width: 85vw;
+}
+.modal .modal-title {
+  font-family: "Satoshi-Black";
+  color: rgb(6, 63, 133);
+}
+.modal .form-label {
+  font-family: "Satoshi-Bold";
+}
+.modal input {
+  border: solid 1px rgb(6, 63, 133);
+}
+
 @media (width <= 992px) {
   .header .menu .social {
     display: none !important;
@@ -455,6 +491,10 @@ footer a {
   .btn-outline-primary,
   .btn-key {
     padding: 8px 120px;
+  }
+  .modal button {
+    width: 100%;
+    display: block;
   }
 }
 @media (width <= 376px) {

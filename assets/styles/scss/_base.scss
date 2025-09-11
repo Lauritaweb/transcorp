@@ -116,17 +116,39 @@ html {
     border-radius: 20px;
     padding: 6px 60px;
     font-family: 'Satoshi-Medium';
+    transition: all .5s ease;
+    &:hover{
+    background-color:$keyColor!important;
+    color:$white;
+    border-color: $keyColor;
+  }
 }
 .btn-outline-primary{
   @extend .btn-primary;
   background-color: transparent!important;
   color: $mainColor;
+
 }
 .btn-key{
     @extend .btn-primary;
     background-color: $keyColor!important;
     border-color: $keyColor;
     color:$white;
+    &:hover{
+      background-color: $mainColor!important;
+      border-color: $mainColor;
+    }
+}
+.btn-outline-key{
+  background-color: transparent!important;
+  color: $keyColor;
+  border: solid $keyColor 1px;
+  border-radius: 20px;
+   padding: 6px 60px;
+  &:hover{
+    background-color: $keyColor!important;
+    color: $white!important;
+  }
 }
 // global headings
 h1,
