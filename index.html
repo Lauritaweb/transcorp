@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Transcorp — Landing</title>
-    <!-- Bootstrap 5 (CSS) -->
+    <title>Transcorp | Movilidad corporativa para potenciar tu empresa</title>
+    <meta name="description" content="Transcorp ofrece soluciones de movilidad corporativa confiables y seguras para empresas. Trasladamos a tus empleados con puntualidad, comodidad y eficiencia, mejorando su bienestar y la productividad de tu organización.">
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
@@ -14,19 +15,26 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/styles/css/main.css">
-
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/styles/css/animate.css">
   </head>
   <body>
     <!-- Marquee -->
-    <div class="marquee text-center py-2 ">
-      <p class="m-0 small text-center">
-        Autogestioná tu traslado corporativo.
-        <a href="#" class="link-primary text-decoration-none">Ingresá aquí</a>
+    <div class="marquee text-center py-2 wow fadeIn" data-wow-duration="1s">
+      <p class="m-0 small text-center d-flex align-items-center justify-content-center">
+        Autogestioná tu traslado corporativo. 
+        <button
+                type="button"
+                class="text-white text-decoration-none ms-2"
+                data-bs-toggle="modal"
+                data-bs-target="#cotizarModal"
+                > Ingresá aquí
+        </button>
       </p>
     </div>
 
     <!-- Header -->
-    <header class="header container">
+    <header class="header container wow fadeIn" data-wow-duration="2s" >
     <!-- Navbar -->
     <nav class="navbar bg-transparent menu pt-4 desktop d-none d-md-block">
         <div class="container-fluid">
@@ -52,24 +60,20 @@
                 </div>
                 <!-- social -->
                 <div class="col-4 d-flex align-items-center justify-content-end social">
-                    <a href="https://www.instagram.com/transcorp_digital/" class="ms-2">
+                    <a href="https://www.instagram.com/transcorp_digital/" class="ms-2"target="_blank"a>
                         <img src="./assets/img/icons/instagram.svg" alt="Instagram" class="social-ico">
                     </a>
-                    <a href="https://www.facebook.com/transcorp.digital" class="ms-2">
+                    <a href="https://www.facebook.com/transcorp.digital" class="ms-2" target="_blank">
                         <img src="./assets/img/icons/facebook.svg" alt="Facebook" class="social-ico">
                     </a>
                     <a href="#" class="ms-2">
                         <img src="./assets/img/icons/linkedin.svg" alt="LinkedIn" class="social-ico">
                     </a>
-                    <a href="https://wa.me/5491156448132" class="ms-2">
+                    <a href="https://wa.me/5491156448132" class="ms-2" target="_blank">
                     <img src="./assets/img/icons/whatsapp.svg" alt="WhatsApp" class="social-ico">
                     </a>
                 </div>
             </div>
-            
-            
-
-
         </div>
     </nav>
     <nav class="navbar bg-transparent menu mobile d-block d-md-none">
@@ -116,6 +120,20 @@
           <li class="nav-item"><a class="nav-link" href="#eco">Sustentabilidad</a></li>
           <li class="nav-item"><a class="nav-link" href="#faqs">Preguntas frecuentes</a></li>
         </ul>
+        <div class="social">
+            <a href="https://www.instagram.com/transcorp_digital/">
+              <img src="./assets/img/icons/instagram-gris.svg" alt="" class="offcanvas-icon">
+            </a>
+            <a href="https://www.facebook.com/transcorp.digital">
+              <img src="./assets/img/icons/facebook-gris.svg" alt="" class="offcanvas-icon">
+            </a>
+            <a href="#">
+              <img src="./assets/img/icons/linkedin-gris.svg" alt="" class="offcanvas-icon">
+            </a>
+            <a href="https://wa.me/5491156448132">
+              <img src="./assets/img/icons/whatsapp-gris.svg" alt="" class="offcanvas-icon">
+            </a>
+        </div>
       </div>
     </div>
 
@@ -142,9 +160,10 @@
         </div>
       </div>
     </header>
+
     <!-- Main -->
     <main>
-        <section class="py-4 services" id="services">
+        <section id="services" class="py-4 services wow fadeIn" data-wow-duration="2s">
         <div class="container">
             <h2 class="fs-2 mb-3 text-main">Servicios</h2>
             <div class="services-slider">
@@ -209,7 +228,7 @@
             </div>
         </section>
         <!-- CTA 1 -->
-        <section class="cta-1 container d-flex flex-column align-items-center justify-content-center">
+        <section class="cta-1 container d-flex flex-column align-items-center justify-content-center wow fadeIn" data-wow-duration="2s">
             <h2 class="fs-1 text-white text-center">
                 Seguridad en cada traslado
             </h2>
@@ -227,7 +246,7 @@
             </button>
         </section>
         <!-- Fleet -->
-        <section class="p-4 fleet container text-main my-5" id="fleet">
+        <section class="p-4 fleet container text-main my-5 wow fadeIn" data-wow-duration="2s" id="fleet">
             <div class=" d-flex flex-column align-items-center justify-content-center">
               <div class="row">
                   <h2 class="fs-2 my-5 text-center">
@@ -257,10 +276,10 @@
                     <img src="./assets/img/servicio-utilitario.png" alt="">
                     <figcaption class="fs-3 text-uppercase">Utilitario</figcaption>
                     <span class="fw-bold fs-5">
-                      Plazas: 3
+                      Plazas: 4
                     </span>
                     <p class="fs-5 lh-sm px-4">
-                      Soluciones prácticas para grupos grandes o traslados con equipaje, garantizando espacio y eficiencia en cada viaje.
+                      Soluciones prácticas para grupos grandes, envíos de paquetería o traslados con equipaje, garantizando espacio y eficiencia en cada viaje.
                     </p>
                   </figure>
               </div>
@@ -275,7 +294,7 @@
             </div>
         </section>
         <!-- Clients -->
-        <section class="clients container d-flex flex-column align-items-center justify-content-center my-5">
+        <section class="clients container d-flex flex-column align-items-center justify-content-center my-5 wow fadeIn" data-wow-duration="2s">
           <div class="container-fluid">
             <h2 class="fs-3 my-4 text-uppercase text-white text-center">
                     Empresas líderes que ya confían en nosotros
@@ -301,7 +320,7 @@
           </div>
         </section>
         <!-- WebApp -->
-        <section class="app container my-5" id="app">
+        <section class="app container my-5 wow fadeIn" data-wow-duration="2s" id="app">
           <div class="row">
             <article class="col-md-8 px-4 px-md-0">
               <h2 class="fs-2 text-main">
@@ -353,7 +372,7 @@
           </div>
         </section>
         <!-- Benefits -->
-        <section class="benefits mb-0 mb-md-5 container" id="benefits">
+        <section class="benefits mb-0 mb-md-5 container wow fadeIn" data-wow-duration="2s" id="benefits">
           <div class="row">
             <article class="col-md-7 text-white">
               <h2 class="fs-2 py-4 ps-4">Beneficios</h2>
@@ -418,7 +437,7 @@
           </div>
         </section>
         <!-- Eco -->
-        <section class="eco container p-4" id="eco">
+        <section class="eco container p-4 wow fadeIn" data-wow-duration="2s" id="eco">
           <div class="row">
             <div class="col-md-5">
               <img src="./assets/img/sustentabilidad-transcorp.png" alt="">
@@ -451,7 +470,7 @@
           </div>
         </section>
         <!-- Faqs -->
-        <section class="faqs container p-4 pb-5 my-0 my-md-5" id="faqs">
+        <section class="faqs container p-4 pb-5 my-0 my-md-5 wow fadeIn" data-wow-duration="2s" id="faqs">
           <h2 class="fs-2 py-4 ps-4 text-white">Preguntas frecuentes</h2>
           <div class="accordion accordion-faq" id="faqAccordion">
               <!-- Item 1 -->
@@ -460,12 +479,12 @@
                   <button class="accordion-button collapsed" type="button"
                           data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
                           aria-expanded="false" aria-controls="faqCollapse1">
-                    ¿Qué diferencia a TransCorp de un servicio de transporte común?
+                    ¿Qué diferencia a Transcorp de un servicio de transporte común?
                   </button>
                 </h3>
                 <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    TransCorp está orientada a empresas: planificación previa, puntualidad, choferes profesionales y soluciones pensadas para equipos de trabajo.
+                    Transcorp está orientada a empresas: planificación previa, puntualidad, choferes profesionales y soluciones pensadas para equipos de trabajo.
                   </div>
                 </div>
               </div>
@@ -513,7 +532,7 @@
                 </h3>
                 <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    Sedanes, vans y minibuses, todos conducidos por choferes profesionales y con mantenimiento al día.
+                    Sedanes, vans y utilitarios, todos conducidos por choferes profesionales y con mantenimiento al día.
                   </div>
                 </div>
               </div>
@@ -561,7 +580,7 @@
               </h3>
               <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Podés comunicarte con nuestro equipo a través del formulario de contacto en la web, por correo electrónico o mediante nuestros canales oficiales en redes sociales. Siempre vas a recibir una respuesta en el menor tiempo posible.
+                  Podés comunicarte con nuestro equipo a través del formulario de contacto en la web, por correo electrónico a info@transcorp.com.ar, por teléfono al +54 9 11 5644-8132 o mediante nuestros canales oficiales en redes sociales. Siempre vas a recibir una respuesta en el menor tiempo posible.
                 </div>
               </div>
             </div>
@@ -570,7 +589,7 @@
         </section>
     </main>
 
-    <footer class="container">
+    <footer class="container wow fadeIn" data-wow-duration="2s">
       <div class="row align-items-center">
         <div class="col-md-4 p-0">
           <img src="./assets/img/transcorp-logo-color-vertical.png" alt="" class="footer-brand">
@@ -591,7 +610,7 @@
         </div>
         <div class="col-md-4 text-center text-md-end">
           <p class="fs-6">
-            Email: info@transcorp.com <br>
+            Email: info@transcorp.com.ar <br>
             Teléfono: +54 9 11 5644-8132
             <br><br>
             © 2025 Transcorp
@@ -601,19 +620,23 @@
     </footer>
 
     <!-- Wa -->
-     <div class="wa">
-      <a href="https://wa.me/5491156448132">
+    <div class="wa wow fadeIn" data-wow-duration="2s">
+      <a href="https://wa.me/5491156448132" target="_blank">
         <img src="./assets/img/icons/whatsapp-green.svg" alt="">
       </a>
-     </div>
+    </div>
     <!-- Bootstrap 5 (JS bundle) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <!-- jQuery (requerido por Slick) -->
+    <!-- Wow Js -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick JS -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -701,7 +724,7 @@
                   <label for="destino" class="form-label">Nombre y apellido</label><span class="text-danger">*</span>
                   <input type="text" id="destino" class="form-control" placeholder="" required />
               </div>
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <label for="servicio" class="form-label">Servicio</label><span class="text-danger">*</span>
                 <select id="servicio" class="form-select" required>
                   <option value="" selected disabled>Seleccionar</option>
@@ -712,9 +735,8 @@
                   <option>Traslados VIP y especiales</option>
                   <option>City tours corporativos</option>
                 </select>
-              </div>
-
-              <div class="row g-3">
+              </div> -->
+              <div class="row g-3 mb-3">
                 <div class="col-md-6">
                   <label for="origen" class="form-label">Email corporativo</label><span class="text-danger">*</span>
                   <input type="text" id="origen" class="form-control" placeholder="" required />
@@ -761,7 +783,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn-outline-key" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn-primary text-white">Enviar</button>
+            <button type="button" class="btn-primary text-white">Enviar recorrido</button>
           </div>
         </div>
       </div>

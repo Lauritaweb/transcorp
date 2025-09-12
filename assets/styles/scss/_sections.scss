@@ -1,6 +1,16 @@
 .marquee{
     background-color: $mainColor;
     color: $white;
+
+    button{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        word-break: keep-all;
+        color:white;
+    }
 }
 // header
 .header{
@@ -17,6 +27,21 @@
         }
         button img{
             height: 22px;
+        }
+    }
+}
+// off canvas
+.offcanvas-body{
+    .nav-link:hover{
+        color: $mainColor;
+        font-weight: bold;
+    }
+    .social{
+        a{
+            text-decoration: none;
+        }
+        .offcanvas-icon{
+            width: 20px!important;
         }
     }
 }
@@ -235,6 +260,12 @@ footer{
     }
     input{
         border: solid 1px $mainColor;
+    }
+    .modal-footer{
+        button{
+            white-space: nowrap;
+            word-break: keep-all;
+        }
     }
 }
 

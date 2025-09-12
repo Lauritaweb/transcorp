@@ -144,6 +144,15 @@ h6 {
   background-color: rgb(6, 63, 133);
   color: #EAEAEA;
 }
+.marquee button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  word-break: keep-all;
+  color: white;
+}
 
 .header {
   height: 90vh;
@@ -159,6 +168,17 @@ h6 {
 }
 .header .menu button img {
   height: 22px;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: rgb(6, 63, 133);
+  font-weight: bold;
+}
+.offcanvas-body .social a {
+  text-decoration: none;
+}
+.offcanvas-body .social .offcanvas-icon {
+  width: 20px !important;
 }
 
 .services-slider .slick-slide {
@@ -393,6 +413,10 @@ footer a {
 }
 .modal input {
   border: solid 1px rgb(6, 63, 133);
+}
+.modal .modal-footer button {
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 @media (width <= 992px) {
