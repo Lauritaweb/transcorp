@@ -110,9 +110,13 @@
         padding: 8px 120px;
     }
     .modal{
-        button{
-            width: 100%;
-            display: block;
+        button.btn-primary,
+        button.btn-outline-key{
+           width: 100%!important;
+           display: block;
+           white-space: nowrap;
+            word-break: keep-all;
+            margin-bottom: 10px;
         }
     }
 

@@ -144,7 +144,7 @@ html {
   color: $keyColor;
   border: solid $keyColor 1px;
   border-radius: 20px;
-   padding: 6px 60px;
+  padding: 6px 60px;
   &:hover{
     background-color: $keyColor!important;
     color: $white!important;

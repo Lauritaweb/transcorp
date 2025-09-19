@@ -388,6 +388,9 @@ h6 {
 footer .footer-icon {
   width: 34px;
 }
+footer .footer-brand {
+  width: 120px;
+}
 footer a {
   text-decoration: none;
 }
@@ -516,9 +519,13 @@ footer a {
   .btn-key {
     padding: 8px 120px;
   }
-  .modal button {
-    width: 100%;
+  .modal button.btn-primary, .modal button.btn-outline-primary, .modal button.btn-key,
+  .modal button.btn-outline-key {
+    width: 100% !important;
     display: block;
+    white-space: nowrap;
+    word-break: keep-all;
+    margin-bottom: 10px;
   }
 }
 @media (width <= 376px) {
